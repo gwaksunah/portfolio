@@ -1,0 +1,306 @@
+.absolute {position:absolute}
+.relative {position:relative}
+
+/*header*/
+
+#header,#container,#footer{
+    margin:0px auto;
+    width:100% ;
+}
+
+#header ul{
+    width:960px;
+    margin:0 auto;
+    overflow: auto;
+}
+/*
+#header .header_bar{
+    width:100%;
+    margin:0 auto;
+}
+*/
+
+#header .login_bar{
+    background-color:#16041c;
+}
+
+#header .login_bar ul{
+    margin:0px auto;
+    padding:0px;
+    background-color:#16041c;
+}
+
+#header .login_bar ul li{
+    float:right;
+    letter-spacing:-1px;
+    font-size:0.8em;
+}
+
+#header .login_bar ul li a{
+    display:block;
+    margin:10px;
+    color:#b9c4da;
+}
+
+#header .login_bar ul li a:hover{
+    font-weight: bold;
+    
+}
+
+
+#header .nav_bar{
+    background-color:#4c3e7b;
+/*    border:1px solid #3b245a; */
+}
+
+#header .nav_bar ul{
+     background-color:#4c3e7b;
+}
+
+#header .nav_bar ul li{
+    float:left;
+    width:190px; 
+ /*   height:50px;
+    line-height: 28px; */
+    text-align: center;
+    letter-spacing:-1px;
+    font-size:1em;
+    line-height: 1.9em;
+}
+
+#header .nav_bar ul li a{
+    display:block;
+    margin:15px auto;
+        color:#fff;
+}
+
+#header .nav_bar ul li a img{
+    position: relative;
+    top: 2px;
+}
+
+
+#header .nav_bar ul li:hover{
+    background-color:#29103a; 
+    color:#ccc;
+    cursor: pointer;
+}
+
+/*body*/
+
+.main,.wrap_search {
+    background: #000 url( '../images/background_1920.png' )  ;   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:60vh; 
+
+}
+.main{
+  /*  width:100%; */
+}
+
+.wrap_search{
+    width:960px; 
+    margin:0 auto;
+    overflow: auto;
+  
+    text-align: center;
+}
+
+.wrap_search h2{
+    color:#fff;
+    font-size:2.0em;
+    margin:80px;
+
+}
+
+.wrap_search .search input[type="text"]{
+    width:480px;
+    height:50px;
+    border:0px;
+    outline: 0px;
+    font-size:1.5em;
+    padding:0px;
+    padding-left: 30px;
+}
+
+.wrap_search  .search input[type="submit"]{
+    width:50px;
+    height:50px;
+    border:0px;
+    outline:0px;
+    position:relative;
+    left:-6px;
+    background: #fff url( '../images/search.png' );
+}
+
+.search input[type="submit"]:hover{
+		cursor: pointer;
+	}
+
+.section01, .section01 .booklist {
+    background: #29103a; 
+}
+
+.booklist{
+    width:960px;
+    margin:0px auto;
+    overflow: auto;
+}
+
+.booklist ul{
+    padding:0px;
+    margin:0px;
+    
+}
+.booklist li{
+    float:left;
+    width:200px; 
+    padding:20px;
+    text-align: center;
+}
+
+.booklist li:hover{
+    cursor: pointer;
+}
+
+.booklist .cover{
+    width:200px;
+    height:200px;
+    text-align:center;
+}
+
+.booklist strong,.booklist span{
+    display: block;
+    color:#fff;
+}
+
+.section02{
+    margin:0px auto;    
+    padding:30px 0;
+}
+
+.tabs{
+    width:965px;
+    overflow: hidden;
+    margin:0px auto;
+    background: #fff;
+}
+
+.tabs >div{
+    display:none;
+    overflow: hidden;
+    border:1px solid #ddd;
+}
+
+ .tabs>input[type="radio"]{
+	display:none;
+}
+.tabs>label{
+    display:inline-block;
+    margin:0 0 -1px 0;
+    padding: 15px 25px;
+    text-align: center;
+    color:#bbb;
+    border: 1px solid transper;
+}
+
+.tabs>label:hover{
+    color:#888;
+    cursor: pointer;
+}
+
+.tabs >input[type="radio"]:checked + label{
+    color:#555;
+    border:1px solid #ddd;
+    border-top:5px solid #29103a;
+    border-bottom:1px solid #fff;
+}
+
+.tabs #tab1:checked ~ .content1 ,
+.tabs #tab2:checked ~ .content2 {
+    display:block;
+    overflow: auto;
+    
+}
+
+.wrap_board{
+    width:960px;
+    margin:20px auto;
+    padding:30px 0;
+    overflow: auto;
+}
+
+.wrap_board .board_left,
+.wrap_board .board_right{
+    float:left;
+    width:475px;
+    border:1px solid #ccc;
+
+}
+
+.wrap_board h2 {
+    font-size:1.0em;
+    font-weight: mormal;
+    margin:15px 15px; 
+}
+
+.wrap_board h2 span{
+    font-size:0.8em;
+    float:right;
+}
+
+.wrap_board p{
+    margin:14px 25px;
+    font-size:0.8em;
+}
+
+.wrap_board p span{
+    float:right;
+    color:#ccc;
+}
+
+
+/*footer*/
+#footer, .footer_info{
+	 background-color:#29103a;
+	 color:#fff;
+}	
+
+.footer_info{
+    width:960px;
+    margin:0px auto ;
+    padding: 10px 0 10px 10px;
+}
+
+.footer_info h2{
+	font-size: 1.5em;
+    margin:10px 0px;
+}
+
+.footer_info a{
+	color:#ccc;
+    font-size:0.8em
+}
+
+.footer_info span{
+    font-size:0.8em
+}
+
+.footer_info a:hover{
+	font-weight: bold;
+}
+
+.footer_info p{
+    font-size:0.7em;
+    margin:10px 0px;
+}
+
+
+
+
+
+
+
